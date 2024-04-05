@@ -41,7 +41,7 @@ const About = () => {
     <Container
       id="about"
       title="About Me"
-      className="mt-16 sm:mt-32 space-y-4 sm:space-y-8 md:space-y-10 "
+      className="mt-16 sm:mt-32 space-y-4 sm:space-y-8 md:space-y-10  "
     >
       <div className="flex flex-col md:flex-row  gap-6 md:gap-20 justify-be ">
         <div className="lg:w-full">

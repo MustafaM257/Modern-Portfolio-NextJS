@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { SparklesCore } from "./ui/sparkles";
+import TextFlipTransition from "./ui/text-flip-transition";
 
 export default function Home() {
   return (
@@ -19,9 +20,10 @@ export default function Home() {
           particleColor="#FFFFFF"
         />
       </div>
-      <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center text-white relative z-20 select-none">
-        Hello, I'm Mostafa
-      </h1>
+      <div className="md:text-7xl  text-3xl lg:text-6xl font-bold text-center text-white relative z-20 select-none">
+        Hello, I'm <br />
+        <TextFlipTransition />
+      </div>
     </div>
   );
 }

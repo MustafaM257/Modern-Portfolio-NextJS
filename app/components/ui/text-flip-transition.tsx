@@ -1,7 +1,11 @@
 "use client";
 import TextTransition, { presets } from "react-text-transition";
 import { useEffect, useState } from "react";
-const TEXTS = ["a Software Engineer", "a Full Stack Developer", "Mostafa!"];
+const TEXTS = [
+  "a Software Engineer",
+  "a Full Stack Developer",
+  "Mostafa Al Mohammad!",
+];
 
 const TextFlipTransition = () => {
   const [index, setIndex] = useState(0);
@@ -19,8 +23,8 @@ const TextFlipTransition = () => {
       <TextTransition
         springConfig={presets.wobbly}
         className={`z-20 border-none ${
-          TEXTS[index % TEXTS.length] === "Mostafa!"
-            ? "text-red-500"
+          TEXTS[index % TEXTS.length] === "Mostafa Al Mohammad!"
+            ? "text-red-600 shadow-2xl"
             : "text-white"
         }`}
       >

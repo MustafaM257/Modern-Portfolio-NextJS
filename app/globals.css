@@ -14,7 +14,10 @@
   }
 }
 .container {
-  @apply max-w-7xl mx-auto overflow-hidden;
+  @apply max-w-7xl  mx-auto overflow-hidden;
+}
+.title {
+  @apply text-4xl text-center transition-all hover:opacity-80 cursor-pointer block;
 }
 * {
   @apply scroll-smooth;

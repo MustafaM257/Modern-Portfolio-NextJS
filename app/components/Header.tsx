@@ -1,5 +1,5 @@
 "use client";
-import { FloatingNav } from "../ui/floating-navbar";
+import { FloatingNav } from "./ui/floating-navbar";
 
 import {
   IconHome,

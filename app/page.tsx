@@ -1,9 +1,9 @@
 import Image from "next/image";
-
+import Header from "./components/shared/Header";
 export default function Home() {
   return (
-    <main className="bg-white text-black">
-      test tailwind config and plugins
+    <main className="bg-gray-700 h-[600vh]">
+      <Header />
     </main>
   );
 }

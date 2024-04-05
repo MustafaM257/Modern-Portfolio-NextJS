@@ -40,8 +40,11 @@ export const navLinks = [
 
 const Header = () => {
   return (
-    <div className="relative w-full bg-black/50">
-      <FloatingNav navItems={navLinks} className=" px-4 text-3xl" />
+    <div className="relative w-full">
+      <FloatingNav
+        navItems={navLinks}
+        className=" px-4 shadow-white/50 shadow-md"
+      />
     </div>
   );
 };

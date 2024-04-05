@@ -5,7 +5,7 @@ const tabs = [
   {
     title: "Work",
     value: "work",
-    content: "Work content",
+    content: <div className="w-full h-full bg-yellow-500">Work content</div>,
   },
   {
     title: "Education",
@@ -39,5 +39,6 @@ const Experience = () => {
     </Container>
   );
 };
+// Maybe add lamp section for each tab , and inside the lamp section there will be a list of items , accordingly i wanna maintain consistency in the design
 
 export default Experience;

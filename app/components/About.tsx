@@ -8,15 +8,42 @@ import {
   IconPhone,
 } from "@tabler/icons-react";
 import Link from "next/link";
+const socialLinks = [
+  {
+    name: "Instagram",
+    link: "https://www.instagram.com/mustafa.m257/",
+    icon: <IconBrandInstagram stroke={2} className="text-white" />,
+  },
+  {
+    name: "GitHub",
+    link: "https://github.com/MustafaM257",
+    icon: <IconBrandGithub stroke={2} className="text-white" />,
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/mustafam257/",
+    icon: <IconBrandLinkedin stroke={2} className="text-white" />,
+  },
+  {
+    name: "Email",
+    link: "mailto:mustafa.m257@proton.me",
+    icon: <IconMail stroke={2} className="text-white" />,
+  },
+  {
+    name: "Phone",
+    link: "tel:+13473822775",
+    icon: <IconPhone stroke={2} className="text-white " />,
+  },
+];
 import Container from "./shared/Container";
 const About = () => {
   return (
     <Container
       id="about"
       title="About Me"
-      className="mt-16 sm:mt-32 space-y-10 bg-white/50"
+      className="mt-16 sm:mt-32 space-y-4 sm:space-y-8 md:space-y-10 "
     >
-      <div className="flex flex-col md:flex-row gap-20 justify-be ">
+      <div className="flex flex-col md:flex-row  gap-6 md:gap-20 justify-be ">
         <div className="lg:w-full">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl ">
             I’m Mostafa . I live in{" "}
@@ -37,12 +64,12 @@ const About = () => {
               the future.
             </p>
             <p className="font-semibold">
-              TL;DR: I'm a software developer, and I write 150+ Words Per
-              Minute!.
+              <span className="text-red-500"> TL;DR:</span> I'm a software
+              developer, and I write 150+ Words Per Minute!.
             </p>
           </div>
         </div>
-        <div className="max-w-xs px-2.5 lg:max-w-none flex flex-col ">
+        <div className="max-w-xs px-2.5 lg:max-w-none flex flex-col">
           <Image
             src={MostafaImg}
             alt=""
@@ -50,24 +77,20 @@ const About = () => {
             className="aspect-square   lg:rotate-3 rounded-2xl object-cover select-none"
           />
           <div className="lg:pl-20">
-            <ul role="list">
-              <Link href="#" icon={XIcon}>
-                Follow on X
-              </Link>
-              <Link href="#" icon={InstagramIcon} className="mt-4">
-                Follow on Instagram
-              </Link>
-              <Link href="#" icon={GitHubIcon} className="mt-4">
-                Follow on GitHub
-              </Link>
-              <Link href="#" icon={LinkedInIcon} className="mt-4">
-                Follow on LinkedIn
-              </Link>
-              <Link
-                href="mailto:spencer@planetaria.tech"
-                icon={MailIcon}
-                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-              ></Link>
+            <ul role="list" className="space-y-6 py-6">
+              {socialLinks.map((link, index) => (
+                <li
+                  key={index}
+                  className="flex items-center gap-2 cursor-pointer "
+                >
+                  {link.icon}
+                  <Link href={link.link} target="_blank">
+                    <p className="text-white hover:text-red-500 border-r border-black hover:border-white transition-all">
+                      {link.name}
+                    </p>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

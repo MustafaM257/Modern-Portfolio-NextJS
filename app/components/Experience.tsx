@@ -13,9 +13,14 @@ const tabs = [
     content: "Education content",
   },
   {
-    title: "Projects",
-    value: "projects",
-    content: "Projects content",
+    title: "Skills",
+    value: "skills",
+    content: "Skills content",
+  },
+  {
+    title: "Certifications",
+    value: "certifications",
+    content: "Certifications content",
   },
 ];
 const Experience = () => {
@@ -23,9 +28,14 @@ const Experience = () => {
     <Container
       id="experience"
       title="Experience"
-      className="mt-16 sm:mt-32 space-y-4 sm:space-y-8 md:space-y-10 h-screen w-full bg-neutral-400 "
+      className="mt-16 sm:mt-32 space-y-4 sm:space-y-8 md:space-y-10 h h-[50vh] lg:h-[1000px] w-full "
     >
-      <Tabs tabs={tabs} />
+      <Tabs
+        tabs={tabs}
+        containerClassName="justify-between bg-neutral-500 rounded-3xl"
+        activeTabClassName="bg-red-600 text-black"
+        contentClassName="text-neutral-100"
+      />
     </Container>
   );
 };

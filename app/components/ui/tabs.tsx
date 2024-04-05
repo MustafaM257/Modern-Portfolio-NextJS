@@ -62,7 +62,7 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-gray-500 rounded-full",
+                  "absolute inset-0  rounded-full",
                   activeTabClassName
                 )}
               />
@@ -115,7 +115,6 @@ export const FadeInDiv = ({
           className={cn("w-full h-full absolute top-0 left-0  ", className)}
         >
           {tab.content}
-          <p className="bg-white">yo?</p>
         </motion.div>
       ))}
     </div>

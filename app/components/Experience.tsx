@@ -1,30 +1,29 @@
 import Container from "./shared/Container";
 import { Tabs } from "./ui/tabs";
-
+import { Work } from "./ExperienceCards/Work";
+import Education from "./ExperienceCards/Education";
+import Skills from "./ExperienceCards/Skills";
+import Certificates from "./ExperienceCards/Certificates";
 const tabs = [
   {
     title: "Work",
     value: "work",
-    content: (
-      <div className="w-full h-full bg-transparent text-white">
-        Work content
-      </div>
-    ),
+    content: <Work />,
   },
   {
     title: "Education",
     value: "education",
-    content: "Education content",
+    content: <Education />,
   },
   {
     title: "Skills",
     value: "skills",
-    content: "Skills content",
+    content: <Skills />,
   },
   {
     title: "Certifications",
     value: "certifications",
-    content: "Certifications content",
+    content: <Certificates />,
   },
 ];
 const Experience = () => {

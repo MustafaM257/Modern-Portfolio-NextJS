@@ -31,6 +31,9 @@
   /* @apply text-4xl text-center transition-all hover:opacity-80 font-semibold cursor-pointer block; */
   @apply text-4xl sm:text-7xl text-center  block cursor-pointer font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-white  to-neutral-300 py-8;
 }
+.experience-title {
+  @apply text-3xl sm:text-6xl text-left  block cursor-pointer font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-white  to-neutral-300 py-8;
+}
 * {
   @apply scroll-smooth;
 }

@@ -21,7 +21,8 @@ import Container from "../shared/Container";
 
 export function Skills() {
   return (
-    <Container title="Skills">
+    <div className=" max-w-4xl mx-auto space-y-6 ">
+      <h1 className="experience-title ">Skills</h1>
       <BentoGrid className="max-w-4xl mx-auto">
         {items.map((item, i) => (
           <BentoGridItem
@@ -36,7 +37,7 @@ export function Skills() {
           />
         ))}
       </BentoGrid>
-    </Container>
+    </div>
   );
 }
 const Skeleton = () => (

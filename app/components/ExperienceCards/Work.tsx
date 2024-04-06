@@ -1,13 +1,20 @@
-"use client";
-import Container from "../shared/Container";
-import React from "react";
-import { BackgroundGradient } from "../ui/background-gradient";
-const workExperience = [
+import { HoverEffect } from "../ui/card-hover-effect";
+
+export function Work() {
+  return (
+    <div className="max-w-4xl mx-auto space-y-6">
+      <h1 className="experience-title max-w-4xl mx-auto">Work</h1>
+
+      <HoverEffect items={work} />
+    </div>
+  );
+}
+export const work = [
   {
     title: "Full Stack Developer",
     company: "techKinks",
     period: "07/2022 – 12/2023",
-    location: "Beirut, Lebanon",
+    location: "Remote",
     description: [
       "Spearheaded the development of a Vue/Nuxt based web application, resulting in a 40% increase in user engagement.",
       "Developed robust back-end systems with Node.js, enhancing scalability and performance.",
@@ -39,28 +46,3 @@ const workExperience = [
     ],
   },
 ];
-
-export function Work() {
-  return (
-    <Container title="Work" className="space-y-10 ">
-      {/* {workExperience.map((experience, index) => (
-        <BackgroundGradient key={index}>
-          <div className="p-4 bg-transparent bg-neutral-800 rounded-xl shadow-lg">
-            <h3 className="text-lg font-semibold">{experience.title}</h3>
-            <h4 className="text-sm font-semibold">{experience.company}</h4>
-            <p className="text-sm">{experience.period}</p>
-            <p className="text-sm">{experience.location}</p>
-            <ul className="list-disc list-inside">
-              {experience.description.map((desc, index) => (
-                <li key={index} className="text-sm">
-                  {desc}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </BackgroundGradient>
-      ))} */}
-      work experience goes here
-    </Container>
-  );
-}

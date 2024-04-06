@@ -29,8 +29,8 @@ const tabs = [
 ];
 const Experience = () => {
   return (
-    <Container id="experience" title="Experience">
-      <DotBackground>
+    <DotBackground>
+      <Container id="experience" title="Experience">
         <div className="flex flex-col space-y-8 w-full h-full ">
           {tabs.map((tab) => (
             <div key={tab.value} className="w-full h-full">
@@ -38,8 +38,8 @@ const Experience = () => {
             </div>
           ))}
         </div>
-      </DotBackground>
-    </Container>
+      </Container>
+    </DotBackground>
   );
 };
 // Maybe add lamp section for each tab , and inside the lamp section there will be a list of items , accordingly i wanna maintain consistency in the design

@@ -20,7 +20,7 @@ export const HoverEffect = ({
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className={cn("grid grid-cols-1  space-y-10", className)}>
+    <div className={cn("grid grid-cols-1  ", className)}>
       {items.map((item, idx) => (
         <div
           key={item?.company}
@@ -116,7 +116,7 @@ export const CardDescription = ({
   return (
     <div
       className={cn(
-        "mt-8 text-white tracking-wide leading-relaxed text-sm",
+        "mt-8 text-white tracking-wide leading-relaxed text-base",
         className
       )}
     >

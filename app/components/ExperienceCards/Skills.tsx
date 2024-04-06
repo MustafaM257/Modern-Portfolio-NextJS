@@ -28,7 +28,9 @@ export function Skills() {
           description={item.description}
           header={item.header}
           icon={item.icon}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+          className={
+            i === 3 || i === 9 || i === 13 || i === 19 ? "md:col-span-2" : ""
+          }
         />
       ))}
     </BentoGrid>
@@ -42,79 +44,139 @@ const items = [
     title: "JavaScript",
     description: "Master the language of the web.",
     header: <Skeleton />,
-    icon: <JSIcon />,
+    icon: <JSIcon className="w-8 h-8" />, // Added className
   },
   {
     title: "React",
     description: "Build powerful user interfaces.",
     header: <Skeleton />,
-    icon: <ReactIcon />,
+    icon: <ReactIcon className="w-8 h-8" />, // Changed className
   },
   {
     title: "TypeScript",
     description: "Enhance your JavaScript with static types.",
     header: <Skeleton />,
-    icon: <TSIcon />,
+    icon: <TSIcon className="w-8 h-8" />, // Already has className
   },
   {
     title: "Vue.js",
     description: "Create interactive web interfaces with ease.",
     header: <Skeleton />,
-    icon: <VueIcon />,
+    icon: <VueIcon className="w-8 h-8" />, // Added className
   },
   {
     title: "Node.js",
     description: "Build scalable network applications.",
     header: <Skeleton />,
-    icon: <NodeJSIcon />,
+    icon: <NodeJSIcon className="w-8 h-8" />, // Added className
   },
   {
     title: "Next.js",
     description: "The React framework for production.",
     header: <Skeleton />,
-    icon: <NextJSIcon />,
+    icon: <NextJSIcon className="w-8 h-8" />, // Added className
   },
   {
     title: "Nuxt.js",
     description: "The intuitive Vue framework for building applications.",
     header: <Skeleton />,
-    icon: <NuxtJSIcon />,
+    icon: <NuxtJSIcon className="w-8 h-8" />, // Added className
   },
   {
     title: "HTML",
     description: "The standard markup language for creating web pages.",
     header: <Skeleton />,
-    icon: <HTMLIcon />,
+    icon: <HTMLIcon className="w-8 h-8" />, // Added className
   },
   {
     title: "CSS",
     description: "Style your web pages with CSS.",
     header: <Skeleton />,
-    icon: <CSSIcon />,
+    icon: <CSSIcon className="w-8 h-8" />, // Added className
   },
   {
     title: "Tailwind CSS",
     description: "A utility-first CSS framework for rapid UI development.",
     header: <Skeleton />,
-    icon: <TailwindIcon />,
+    icon: <TailwindIcon className="w-8 h-8" />, // Added className
   },
   {
     title: "Bootstrap",
     description: "The world’s most popular front-end component library.",
     header: <Skeleton />,
-    icon: <BootstrapIcon />,
+    icon: <BootstrapIcon className="w-8 h-8" />, // Added className
   },
   {
     title: "Docker",
     description: "Build, ship, and run distributed applications.",
     header: <Skeleton />,
-    icon: <DockerIcon />,
+    icon: <DockerIcon className="w-8 h-8" />, // Added className
   },
   {
     title: "Kubernetes",
     description: "Manage containerized applications across clusters.",
     header: <Skeleton />,
-    icon: <KubernetesIcon />,
+    icon: <KubernetesIcon className="w-8 h-8" />, // Added className
+  },
+  {
+    title: "Docker",
+    description: "Build, ship, and run distributed applications.",
+    header: <Skeleton />,
+    icon: <DockerIcon className="w-8 h-8" />, // Added className
+  },
+  {
+    title: "Kubernetes",
+    description: "Manage containerized applications across clusters.",
+    header: <Skeleton />,
+    icon: <KubernetesIcon className="w-8 h-8" />, // Added className
+  },
+  {
+    title: "Docker",
+    description: "Build, ship, and run distributed applications.",
+    header: <Skeleton />,
+    icon: <DockerIcon className="w-8 h-8" />, // Added className
+  },
+  {
+    title: "Kubernetes",
+    description: "Manage containerized applications across clusters.",
+    header: <Skeleton />,
+    icon: <KubernetesIcon className="w-8 h-8" />, // Added className
+  },
+  {
+    title: "Docker",
+    description: "Build, ship, and run distributed applications.",
+    header: <Skeleton />,
+    icon: <DockerIcon className="w-8 h-8" />, // Added className
+  },
+  {
+    title: "Kubernetes",
+    description: "Manage containerized applications across clusters.",
+    header: <Skeleton />,
+    icon: <KubernetesIcon className="w-8 h-8" />, // Added className
+  },
+  {
+    title: "Docker",
+    description: "Build, ship, and run distributed applications.",
+    header: <Skeleton />,
+    icon: <DockerIcon className="w-8 h-8" />, // Added className
+  },
+  {
+    title: "Kubernetes",
+    description: "Manage containerized applications across clusters.",
+    header: <Skeleton />,
+    icon: <KubernetesIcon className="w-8 h-8" />, // Added className
+  },
+  {
+    title: "Docker",
+    description: "Build, ship, and run distributed applications.",
+    header: <Skeleton />,
+    icon: <DockerIcon className="w-8 h-8" />, // Added className
+  },
+  {
+    title: "Kubernetes",
+    description: "Manage containerized applications across clusters.",
+    header: <Skeleton />,
+    icon: <KubernetesIcon className="w-8 h-8" />, // Added className
   },
 ];
 

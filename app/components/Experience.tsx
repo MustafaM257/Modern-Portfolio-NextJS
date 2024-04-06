@@ -5,7 +5,11 @@ const tabs = [
   {
     title: "Work",
     value: "work",
-    content: <div className="w-full h-full bg-yellow-500">Work content</div>,
+    content: (
+      <div className="w-full h-full bg-transparent text-white">
+        Work content
+      </div>
+    ),
   },
   {
     title: "Education",

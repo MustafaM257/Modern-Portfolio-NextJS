@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
+import DotBackground from "./dot-background";
 
 type Tab = {
   title: string;
@@ -114,7 +115,7 @@ export const FadeInDiv = ({
           }}
           className={cn("w-full h-full absolute top-0 left-0  ", className)}
         >
-          {tab.content}
+          <DotBackground>{tab.content}</DotBackground>
         </motion.div>
       ))}
     </div>

@@ -69,7 +69,7 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative block  text-white">{tab.title}</span>
+            <span className="relative block ">{tab.title}</span>
           </button>
         ))}
       </div>
@@ -113,7 +113,7 @@ export const FadeInDiv = ({
           animate={{
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
-          className={cn("w-full h-full absolute top-0 left-0  ", className)}
+          className={cn("w-full h-screen absolute top-0 left-0  ", className)}
         >
           <DotBackground>{tab.content}</DotBackground>
         </motion.div>

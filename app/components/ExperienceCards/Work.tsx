@@ -1,6 +1,7 @@
 "use client";
 import Container from "../shared/Container";
 import React from "react";
+import { BackgroundGradient } from "../ui/background-gradient";
 const workExperience = [
   {
     title: "Full Stack Developer",
@@ -41,8 +42,25 @@ const workExperience = [
 
 export function Work() {
   return (
-    <div className="w-full h-full">
-      <Container title="Work">"</Container>
-    </div>
+    <Container title="Work" className="space-y-10 ">
+      {/* {workExperience.map((experience, index) => (
+        <BackgroundGradient key={index}>
+          <div className="p-4 bg-transparent bg-neutral-800 rounded-xl shadow-lg">
+            <h3 className="text-lg font-semibold">{experience.title}</h3>
+            <h4 className="text-sm font-semibold">{experience.company}</h4>
+            <p className="text-sm">{experience.period}</p>
+            <p className="text-sm">{experience.location}</p>
+            <ul className="list-disc list-inside">
+              {experience.description.map((desc, index) => (
+                <li key={index} className="text-sm">
+                  {desc}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </BackgroundGradient>
+      ))} */}
+      work experience goes here
+    </Container>
   );
 }

@@ -1,4 +1,6 @@
 import { cn } from "@/utils/cn";
+import { BackgroundGradient } from "./background-gradient";
+import DotBackground from "./dot-background";
 
 export const BentoGrid = ({
   className,
@@ -35,16 +37,16 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 bg-white/85  dark:border-white/[0.2] border border-transparent justify-between flex flex-col space-y-4",
+        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 bg-black/50  border-white/[0.2] border  justify-between flex flex-col space-y-4",
         className
       )}
     >
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         {icon}
-        <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
+        <div className="font-sans font-bold text-white brightness-150 mb-2 mt-2">
           {title}
         </div>
-        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
+        <div className="font-sans font-normal text-white/90 text-xs dark:text-neutral-300">
           {description}
         </div>
       </div>

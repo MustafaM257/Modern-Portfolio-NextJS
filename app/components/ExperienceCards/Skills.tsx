@@ -17,23 +17,26 @@ import {
 } from "../shared/icons/skills";
 
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
+import Container from "../shared/Container";
 
 export function Skills() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          icon={item.icon}
-          className={
-            i === 3 || i === 9 || i === 13 || i === 19 ? "md:col-span-2" : ""
-          }
-        />
-      ))}
-    </BentoGrid>
+    <Container title="Skills">
+      <BentoGrid className="max-w-4xl mx-auto">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.header}
+            icon={item.icon}
+            className={
+              i === 3 || i === 9 || i === 13 || i === 19 ? "md:col-span-2" : ""
+            }
+          />
+        ))}
+      </BentoGrid>
+    </Container>
   );
 }
 const Skeleton = () => (
@@ -105,66 +108,6 @@ const items = [
     description: "The world’s most popular front-end component library.",
     header: <Skeleton />,
     icon: <BootstrapIcon className="w-8 h-8" />, // Added className
-  },
-  {
-    title: "Docker",
-    description: "Build, ship, and run distributed applications.",
-    header: <Skeleton />,
-    icon: <DockerIcon className="w-8 h-8" />, // Added className
-  },
-  {
-    title: "Kubernetes",
-    description: "Manage containerized applications across clusters.",
-    header: <Skeleton />,
-    icon: <KubernetesIcon className="w-8 h-8" />, // Added className
-  },
-  {
-    title: "Docker",
-    description: "Build, ship, and run distributed applications.",
-    header: <Skeleton />,
-    icon: <DockerIcon className="w-8 h-8" />, // Added className
-  },
-  {
-    title: "Kubernetes",
-    description: "Manage containerized applications across clusters.",
-    header: <Skeleton />,
-    icon: <KubernetesIcon className="w-8 h-8" />, // Added className
-  },
-  {
-    title: "Docker",
-    description: "Build, ship, and run distributed applications.",
-    header: <Skeleton />,
-    icon: <DockerIcon className="w-8 h-8" />, // Added className
-  },
-  {
-    title: "Kubernetes",
-    description: "Manage containerized applications across clusters.",
-    header: <Skeleton />,
-    icon: <KubernetesIcon className="w-8 h-8" />, // Added className
-  },
-  {
-    title: "Docker",
-    description: "Build, ship, and run distributed applications.",
-    header: <Skeleton />,
-    icon: <DockerIcon className="w-8 h-8" />, // Added className
-  },
-  {
-    title: "Kubernetes",
-    description: "Manage containerized applications across clusters.",
-    header: <Skeleton />,
-    icon: <KubernetesIcon className="w-8 h-8" />, // Added className
-  },
-  {
-    title: "Docker",
-    description: "Build, ship, and run distributed applications.",
-    header: <Skeleton />,
-    icon: <DockerIcon className="w-8 h-8" />, // Added className
-  },
-  {
-    title: "Kubernetes",
-    description: "Manage containerized applications across clusters.",
-    header: <Skeleton />,
-    icon: <KubernetesIcon className="w-8 h-8" />, // Added className
   },
   {
     title: "Docker",

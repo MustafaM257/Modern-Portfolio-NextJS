@@ -4,7 +4,7 @@ const Container = ({
   children,
   className,
 }: {
-  id: string;
+  id?: string;
   title: string;
   children: React.ReactNode;
   className?: string;

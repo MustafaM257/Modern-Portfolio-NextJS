@@ -21,8 +21,8 @@ const tabs = [
     content: <Skills />,
   },
   {
-    title: "Certifications",
-    value: "certifications",
+    title: "Certificates",
+    value: "certificates",
     content: <Certificates />,
   },
 ];

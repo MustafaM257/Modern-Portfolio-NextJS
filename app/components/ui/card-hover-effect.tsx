@@ -20,7 +20,7 @@ export const HoverEffect = ({
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className={cn("grid grid-cols-1  py-10", className)}>
+    <div className={cn("grid grid-cols-1  space-y-10", className)}>
       {items.map((item, idx) => (
         <div
           key={item?.company}
@@ -54,10 +54,10 @@ export const HoverEffect = ({
             <CardDescription>
               {item.description.map((line) => {
                 return (
-                  <p className="py-2 md:py-4">
+                  <div className="py-2 md:py-4">
                     <span>* </span>
                     {line}
-                  </p>
+                  </div>
                 );
               })}
             </CardDescription>
@@ -114,13 +114,13 @@ export const CardDescription = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p
+    <div
       className={cn(
         "mt-8 text-white tracking-wide leading-relaxed text-sm",
         className
       )}
     >
       {children}
-    </p>
+    </div>
   );
 };

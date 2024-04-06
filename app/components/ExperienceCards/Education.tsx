@@ -1,8 +1,8 @@
 import Container from "../shared/Container";
 const Education = () => {
   return (
-    <div className="w-full h-full">
-      <Container title="Education">Work experience goes here</Container>
+    <div className=" max-w-4xl mx-auto space-y-6">
+      <h1 className="experience-title ">ِEducation</h1>
     </div>
   );
 };

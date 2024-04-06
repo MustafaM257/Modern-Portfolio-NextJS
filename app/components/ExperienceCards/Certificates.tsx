@@ -30,7 +30,7 @@ export function Certificates() {
               <p className="text-base sm:text-xl  mt-4 mb-2 text-white">
                 {certificate.title}
               </p>
-              <p className="text-base sm:text-xl  mb-2 text-white">
+              <p className="text-base font-semibold sm:text-xl  mb-2 text-white">
                 {certificate.company}
               </p>
               <p className="text-sm text-neutral-100">{certificate.period}</p>
@@ -38,7 +38,7 @@ export function Certificates() {
             <Image
               src={certificate.image}
               alt={certificate.title}
-              className="rounded-2xl"
+              className="rounded-2xl justify-self-start"
               width={42}
               height={42}
             />

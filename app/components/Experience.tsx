@@ -31,7 +31,7 @@ const Experience = () => {
     <Container
       id="experience"
       title="Experience"
-      className="mt-16 sm:mt-32 space-y-4 sm:space-y-8 md:space-y-10 h h-[50vh] lg:h-[1000px] w-full "
+      className="mt-16 sm:mt-32 space-y-4 sm:space-y-8 md:space-y-10   w-full h-screen "
     >
       <Tabs
         tabs={tabs}

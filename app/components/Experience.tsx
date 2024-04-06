@@ -1,5 +1,4 @@
 import Container from "./shared/Container";
-import { Tabs } from "./ui/tabs";
 import { Work } from "./ExperienceCards/Work";
 import Education from "./ExperienceCards/Education";
 import Skills from "./ExperienceCards/Skills";
@@ -28,17 +27,9 @@ const tabs = [
 ];
 const Experience = () => {
   return (
-    // <Container
-    //   id="experience"
-    //   title="Experience"
-    //   className="mt-16 sm:mt-32 space-y-4 sm:space-y-8 md:space-y-10 h-screen w-full "
-    // >
-    <Tabs
-      tabs={tabs}
-      containerClassName="justify-between h-full bg-neutral-500 rounded-3xl max-w-7xl mx-auto "
-      activeTabClassName="bg-red-600 text-black"
-      contentClassName="text-neutral-100 bg-black"
-    />
+    <Container id="experience" title="Experience">
+      Drop the tabs
+    </Container>
   );
 };
 // Maybe add lamp section for each tab , and inside the lamp section there will be a list of items , accordingly i wanna maintain consistency in the design

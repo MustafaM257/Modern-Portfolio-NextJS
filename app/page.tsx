@@ -12,6 +12,7 @@ export default function Page() {
       <Home />
       <About />
       <Experience />
+      <div className="w-full h-96 mt-auto bg-indigo-300"></div>
     </main>
   );
 }

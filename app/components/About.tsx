@@ -38,11 +38,7 @@ const socialLinks = [
 import Container from "./shared/Container";
 const About = () => {
   return (
-    <Container
-      id="about"
-      title="About Me"
-      className="mt-16 sm:mt-32 space-y-4 sm:space-y-8 md:space-y-10  "
-    >
+    <Container id="about" title="About Me">
       <div className="flex flex-col md:flex-row  gap-6 md:gap-20 justify-be ">
         <div className="lg:w-full">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl ">

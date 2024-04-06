@@ -1,8 +1,10 @@
 import Container from "./shared/Container";
+
 import { Work } from "./ExperienceCards/Work";
 import Education from "./ExperienceCards/Education";
 import Skills from "./ExperienceCards/Skills";
 import Certificates from "./ExperienceCards/Certificates";
+import DotBackground from "./ui/dot-background";
 const tabs = [
   {
     title: "Work",
@@ -28,7 +30,15 @@ const tabs = [
 const Experience = () => {
   return (
     <Container id="experience" title="Experience">
-      Drop the tabs
+      <DotBackground>
+        <div className="flex flex-col space-y-8">
+          {tabs.map((tab) => (
+            <div key={tab.value} className="w-full h-full">
+              {tab.content}
+            </div>
+          ))}
+        </div>
+      </DotBackground>
     </Container>
   );
 };

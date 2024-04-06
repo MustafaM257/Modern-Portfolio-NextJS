@@ -7,16 +7,9 @@ import Image from "next/image";
 export function Education() {
   return (
     <div>
-      <div className=" max-w-4xl mx-auto space-y-6 ">
+      <div className=" max-w-4xl mx-auto space-y-6">
         <h1 className="experience-title ">Education</h1>
         <BackgroundGradient className="rounded-2xl w-full p-4 sm:p-10 bg-black">
-          {/* <Image
-          src={`/jordans.webp`}
-          alt="jordans"
-          height="400"
-          width="400"
-          className="object-contain"
-        /> */}
           <p className="text-base sm:text-xl  mt-4 mb-2 text-white">
             Bachelor of <span className="text-red-500">Computer Science</span>
           </p>

@@ -31,7 +31,7 @@ const Experience = () => {
   return (
     <Container id="experience" title="Experience">
       <DotBackground>
-        <div className="flex flex-col space-y-8">
+        <div className="flex flex-col space-y-8 w-full h-full ">
           {tabs.map((tab) => (
             <div key={tab.value} className="w-full h-full">
               {tab.content}

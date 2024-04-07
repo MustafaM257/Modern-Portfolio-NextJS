@@ -39,7 +39,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1   rounded-2xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4  bg-black/50 border-white/[0.2]  border hover:border-white justify-between flex flex-col space-y-2",
+        "row-span-1 rounded-2xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4  bg-black/50 border-white/[0.2]  border hover:border-white justify-between flex flex-col space-y-2",
         className
       )}
     >
@@ -48,6 +48,7 @@ export const BentoGridItem = ({
         {icon}
       </div>
       <GradientButton
+        className="w-[10rem] text-sm"
         title="Source Code"
         href={href}
         icon={<IconBrandGithub className="w-6 h-6" />}

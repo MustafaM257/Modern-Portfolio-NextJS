@@ -8,7 +8,7 @@ import GradientButton from "./ui/gradient-button";
 const About = () => {
   return (
     <Container id="about" title="About Me">
-      <div className="flex flex-col md:flex-row  gap-6 md:gap-20 justify-be ">
+      <div className="flex flex-col md:flex-row  gap-6 md:gap-20 justify-between ">
         <div className="lg:w-full">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl ">
             I’m Mostafa . I live in{" "}

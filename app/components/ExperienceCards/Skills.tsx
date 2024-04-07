@@ -16,7 +16,7 @@ import {
   KubernetesIcon,
 } from "../shared/icons/skills";
 
-import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
+import { BentoGrid, BentoGridItem } from "../ui/skills-bento-grid";
 import Container from "../shared/Container";
 
 export function Skills() {

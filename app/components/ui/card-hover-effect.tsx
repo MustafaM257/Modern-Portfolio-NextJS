@@ -45,16 +45,16 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
+          <Card key={idx}>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.company}</CardDescription>
             <CardDescription>
               {item.period} | {item.location}
             </CardDescription>
             <CardDescription>
-              {item.description.map((line) => {
+              {item.description.map((line, index) => {
                 return (
-                  <div className="py-2 md:py-4">
+                  <div className="py-2 md:py-4" key={index}>
                     <span>* </span>
                     {line}
                   </div>

@@ -24,8 +24,11 @@ export function Certificates() {
     <div>
       <div className=" max-w-4xl mx-auto space-y-6">
         <h1 className="experience-title ">Certificates</h1>
-        {certificates_lists.map((certificate) => (
-          <BackgroundGradient className="rounded-2xl w-full p-4 sm:p-10 bg-black flex flex-row items-center justify-between">
+        {certificates_lists.map((certificate, idx) => (
+          <BackgroundGradient
+            key={idx}
+            className="rounded-2xl w-full p-4 sm:p-10 bg-black flex flex-row items-center justify-between"
+          >
             <div>
               <p className="text-base sm:text-xl  mt-4 mb-2 text-white">
                 {certificate.title}

@@ -26,6 +26,10 @@ export function Projects() {
           />
         ))}
       </BentoGrid>
+      <h2 className="text-base font-bold text-center mt-12 mb-4">
+        For <span className="text-red-600">confidentiality</span> reasons, not
+        all of my projects are listed here.
+      </h2>
     </Container>
   );
 }

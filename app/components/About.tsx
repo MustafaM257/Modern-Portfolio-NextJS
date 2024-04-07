@@ -1,41 +1,10 @@
 import Image from "next/image";
 import MostafaImg from "../../public/assets/mostafa.jpg";
-import {
-  IconBrandInstagram,
-  IconBrandGithub,
-  IconMail,
-  IconBrandLinkedin,
-  IconPhone,
-} from "@tabler/icons-react";
+
 import Link from "next/link";
-const socialLinks = [
-  {
-    name: "Instagram",
-    link: "https://www.instagram.com/mustafa.m257/",
-    icon: <IconBrandInstagram stroke={2} className="text-white" />,
-  },
-  {
-    name: "GitHub",
-    link: "https://github.com/MustafaM257",
-    icon: <IconBrandGithub stroke={2} className="text-white" />,
-  },
-  {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/mustafam257/",
-    icon: <IconBrandLinkedin stroke={2} className="text-white" />,
-  },
-  {
-    name: "Email",
-    link: "mailto:mustafa.m257@proton.me",
-    icon: <IconMail stroke={2} className="text-white" />,
-  },
-  {
-    name: "Phone",
-    link: "tel:+13473822775",
-    icon: <IconPhone stroke={2} className="text-white " />,
-  },
-];
+
 import Container from "./shared/Container";
+import GradientButton from "./ui/gradient-button";
 const About = () => {
   return (
     <Container id="about" title="About Me">
@@ -72,23 +41,6 @@ const About = () => {
             sizes="(min-width: 1024px) 32rem, 20rem"
             className="aspect-square   lg:rotate-3 rounded-2xl object-cover select-none"
           />
-          <div className="lg:pl-20">
-            <ul role="list" className="space-y-6 py-6">
-              {socialLinks.map((link, index) => (
-                <li
-                  key={index}
-                  className="flex items-center gap-2 cursor-pointer "
-                >
-                  {link.icon}
-                  <Link href={link.link} target="_blank">
-                    <p className="text-white hover:text-red-500 border-r border-black hover:border-white transition-all">
-                      {link.name}
-                    </p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </div>
     </Container>

@@ -18,6 +18,7 @@ export function Projects() {
         {items.map((item, i) => (
           <BentoGridItem
             key={i}
+            href={item.href}
             title={item.title}
             description={item.description}
             className={item.className}

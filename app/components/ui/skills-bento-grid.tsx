@@ -1,6 +1,4 @@
 import { cn } from "@/utils/cn";
-import { BackgroundGradient } from "./background-gradient";
-import DotBackground from "./dot-background";
 
 export const BentoGrid = ({
   className,

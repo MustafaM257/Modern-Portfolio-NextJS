@@ -34,14 +34,12 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-xs px-2.5 lg:max-w-none flex flex-col">
-          <Image
-            src={MostafaImg}
-            alt=""
-            sizes="(min-width: 1024px) 32rem, 20rem"
-            className="aspect-square   lg:rotate-3 rounded-2xl object-cover select-none"
-          />
-        </div>
+        <Image
+          src={MostafaImg}
+          alt=""
+          sizes="(min-width: 1024px) 32rem, 20rem"
+          className="aspect-square    rounded-2xl object-cover   select-none"
+        />
       </div>
     </Container>
   );

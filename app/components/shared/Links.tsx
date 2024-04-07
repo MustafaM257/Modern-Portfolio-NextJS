@@ -35,10 +35,10 @@ const socialLinks = [
 ];
 const Links = () => {
   return (
-    <div className=" w-full max-w-6xl mx-auto">
+    <div className=" w-full max-w-6xl mx-auto flex items-center justify-center">
       <ul
         role="list"
-        className=" py-10 flex flex-row items-center justify-between "
+        className=" pt-10 flex flex-col gap-6   lg:flex-row items-center justify-between "
       >
         {socialLinks.map((link, index) => (
           <li
@@ -46,7 +46,7 @@ const Links = () => {
             className="flex items-center w-full gap-2 cursor-pointer "
           >
             <GradientButton
-              className="w-[12rem] text-md"
+              className="w-[12rem]  text-xl"
               href={link.link}
               title={link.name}
               icon={link.icon}

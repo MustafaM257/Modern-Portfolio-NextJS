@@ -44,7 +44,7 @@ const contacts = [
 ];
 export function Contact() {
   return (
-    <Container id="contact" title="Contact Me">
+    <Container id="contact" title="Contact Me" className="mb-16">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {contacts.map((contact, index) => (
           <ContactCard

@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 import Links from "./components/shared/Links";
 export default function Page() {
   return (
-    <main className="bg-black text-neutral-100 ">
+    <main className=" text-neutral-100 ">
       <Header />
       <Home />
       <About />

@@ -10,10 +10,10 @@ const ContactCard = ({
   description: { title: string; link?: string }[];
 }) => {
   return (
-    <div className=" w-full relative max-w-xs ">
+    <div className=" w-full relative  md:max-w-xs ">
       <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-white  transform scale-[0.80] bg-white rounded-full blur-3xl" />
       <div className="relative shadow-xl bg-black border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-start items-start">
-        <div className="h-10 w-10 rounded-full  flex items-center justify-center  mb-4 ">
+        <div className="h-10 w-10 rounded-full bg-neutral-900/50  flex items-center justify-center  mb-4 ">
           {icon}
         </div>
         <h1 className="font-bold text-xl text-white mb-4 relative z-50">
@@ -22,9 +22,10 @@ const ContactCard = ({
         <ul className="gap-5">
           {description.map((desc, index) => (
             <li key={index}>
+              {"~  "}
               <a
                 href={desc.link}
-                className="text-white hover:text-blue-500 transition-colors"
+                className="text-white text-base hover:text-blue-500 transition-colors"
               >
                 {desc.title}
               </a>

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import DeepLearningAIImage from "@/public/assets/DeepLearningAI.png";
-import EsriImage from "@/public/assets/Esri.png";
+import EsriImage from "@/public/assets/ESRI.png";
 import { BackgroundGradient } from "../ui/background-gradient";
 import Image from "next/image";
 

@@ -4,6 +4,7 @@ import Container from "./shared/Container";
 import { IconPhone, IconMail, IconLocation } from "@tabler/icons-react";
 import { title } from "process";
 import ContactCard from "./ContactCard";
+import Links from "./shared/Links";
 const contacts = [
   {
     icon: IconPhone,
@@ -55,6 +56,7 @@ export function Contact() {
           />
         ))}
       </div>
+      <Links />
     </Container>
   );
 }

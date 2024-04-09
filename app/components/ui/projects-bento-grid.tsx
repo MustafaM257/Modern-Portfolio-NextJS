@@ -43,7 +43,7 @@ export const BentoGridItem = ({
         className
       )}
     >
-      <div className="font-sans text-xl font-bold text-white mb-2 mt-2 flex flex=row items-center justify-between ">
+      <div className="font-sans text-xl font-bold text-cyan-400 mb-2 mt-2 flex flex=row items-center justify-between ">
         <h2>{title}</h2>
         {icon}
       </div>

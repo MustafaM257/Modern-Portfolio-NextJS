@@ -14,10 +14,6 @@ const contacts = [
         title: "+1 (347) 382-2775",
         link: "tel:+13473822775",
       },
-      {
-        title: "+961 (81) 879-053",
-        link: "tel:+96181879053",
-      },
     ],
   },
   {
@@ -36,9 +32,6 @@ const contacts = [
     description: [
       {
         title: "New Jersey, United States",
-      },
-      {
-        title: "Beirut, Lebanon",
       },
     ],
   },

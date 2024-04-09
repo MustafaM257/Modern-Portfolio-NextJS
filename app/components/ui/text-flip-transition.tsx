@@ -24,7 +24,7 @@ const TextFlipTransition = () => {
         springConfig={presets.wobbly}
         className={`z-20 border-none ${
           TEXTS[index % TEXTS.length] === "Mostafa Al Mohammad!"
-            ? "text-red-600 shadow-2xl"
+            ? "text-cyan-400 shadow-2xl"
             : "text-white"
         }`}
       >

@@ -47,7 +47,9 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card key={idx}>
             <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.company}</CardDescription>
+            <CardDescription className="text-cyan-400">
+              {item.company}
+            </CardDescription>
             <CardDescription>
               {item.period} | {item.location}
             </CardDescription>

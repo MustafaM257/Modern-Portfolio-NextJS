@@ -12,7 +12,7 @@ const About = () => {
         <div className="lg:w-full">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl ">
             I’m Mostafa . I live in{" "}
-            <span className="text-red-500">New Jersey, United States</span> .
+            <span className="text-cyan-400">New Jersey, United States</span> .
           </h1>
           <div className="mt-6 space-y-7 text-base text-white">
             <p>
@@ -29,7 +29,7 @@ const About = () => {
               the future.
             </p>
             <p className="font-semibold">
-              <span className="text-red-500"> TL;DR:</span> I'm a software
+              <span className="text-cyan-500"> TL;DR:</span> I'm a software
               developer, and I write 150+ Words Per Minute!.
             </p>
           </div>

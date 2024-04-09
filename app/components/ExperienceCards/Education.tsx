@@ -11,9 +11,9 @@ export function Education() {
         <h1 className="experience-title ">Education</h1>
         <BackgroundGradient className="rounded-2xl w-full p-4 sm:p-10 bg-black">
           <p className="text-base sm:text-xl  mt-4 mb-2 text-white">
-            Bachelor of <span className="text-red-500">Computer Science</span>
+            Bachelor of Computer Science
           </p>
-          <p className="text-base sm:text-xl  mb-2 text-white">
+          <p className="text-base sm:text-xl  mb-2 text-cyan-400">
             Lebaense University
           </p>
           <p className="text-sm text-neutral-100">

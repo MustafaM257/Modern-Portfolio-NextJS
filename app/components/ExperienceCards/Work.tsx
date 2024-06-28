@@ -13,7 +13,7 @@ export const work = [
   {
     title: "Full Stack Developer",
     company: "techKinks",
-    period: "07/2022 – 12/2023",
+    period: "08/2022 – 02/2024",
     location: "Remote",
     description: [
       "Spearheaded the development of a Vue/Nuxt based web application, resulting in a 40% increase in user engagement.",

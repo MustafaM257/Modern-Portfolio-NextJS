@@ -22,7 +22,7 @@ const ContactCard = ({
         <ul className="gap-5">
           {description.map((desc, index) => (
             <li key={index}>
-              {"~  "}
+              {" "}
               <a
                 href={desc.link}
                 className="text-white text-base hover:text-blue-500 transition-colors"

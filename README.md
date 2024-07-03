@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TheMostafa Portfolio
+
+Welcome to my personal portfolio site, [themostafa.com](https://themostafa.com)! Yuy!
+
+## Technologies Used
+
+This project utilizes the following technologies:
+
+- [@tabler/icons-react](https://www.npmjs.com/package/@tabler/icons-react): ^3.1.0
+- [@tsparticles/engine](https://www.npmjs.com/package/@tsparticles/engine): ^3.3.0
+- [@tsparticles/react](https://www.npmjs.com/package/@tsparticles/react): ^3.0.0
+- [@tsparticles/slim](https://www.npmjs.com/package/@tsparticles/slim): ^3.3.0
+- [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
+- [framer-motion](https://www.npmjs.com/package/framer-motion): ^11.0.24
+- [mini-svg-data-uri](https://www.npmjs.com/package/mini-svg-data-uri): ^1.4.4
+- [next](https://www.npmjs.com/package/next): 14.1.4
+- [react](https://www.npmjs.com/package/react): ^18
+- [react-dom](https://www.npmjs.com/package/react-dom): ^18
+- [react-text-transition](https://www.npmjs.com/package/react-text-transition): ^3.1.0
+- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^2.2.2
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [pnpm](https://pnpm.io/): Fast, disk space efficient package manager
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/themostafa-portfolio.git
+cd themostafa-portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies using pnpm:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Running the Development Server
 
-## Learn More
+Start the development server:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open your browser and navigate to `http://localhost:3000` to view the site.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+For production builds:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+pnpm run build
+pnpm run start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+Honestly, no license, I'm an open sourcer and if you feel you liked some code, just copy paste, don't forget to star!
+
+## Contributing
+
+Feel free to fork the repository and submit pull requests. Any contributions are welcome!
+
+## Contact
+
+You can reach me through [themostafa.com](https://themostafa.com).
+
+---
+
+Enjoy exploring my portfolio! 🎉

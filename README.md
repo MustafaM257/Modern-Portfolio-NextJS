@@ -32,8 +32,8 @@ Ensure you have the following installed:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/themostafa-portfolio.git
-cd themostafa-portfolio
+git clone git@github.com:MustafaM257/Modern-Portfolio-NextJS.git
+cd Modern-Portfolio-NextJS
 ```
 
 2. Install dependencies using pnpm:
